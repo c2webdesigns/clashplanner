@@ -1,0 +1,34 @@
+{
+  "name": "clashplanner",
+  "version": "0.0.1",
+  "authors": [
+    "Corey Coburn <corey@c2webdesigns.com>"
+  ],
+  "description": "App to help Clan organize clan wars, clanmates, and guides / strategies for game Clash of Clans",
+  "keywords": [
+    "clash",
+    "clans",
+    "supercell",
+    "strategy",
+    "war",
+    "game",
+    "iphone",
+    "android",
+    "ios"
+  ],
+  "license": "MIT",
+  "homepage": "http://clashplanner.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass-official": "3.2.0+2",
+    "animate-css": "~3.2.0",
+    "enquire": "~2.1.2"
+  }
+}
