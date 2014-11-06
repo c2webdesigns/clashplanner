@@ -28,7 +28,7 @@
 
         @else
 
-          <a class="btn btn-success" id="btn-signin" href="/auth/login"><img src="/images/facebook-24.png" alt="facebook icon"/> Sign in with Facebook</a>
+          <a class="btn btn-success" id="btn-signin" href="/auth/login">Sign in</a>
 
         @endif
 
