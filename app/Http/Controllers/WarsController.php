@@ -6,6 +6,14 @@ use App\Users\User;
 class WarsController extends Controller {
 
     /**
+     * Make sure user is authenticated
+     */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
+    /**
      * Display a listing of the resource.
      *
      * @return Response

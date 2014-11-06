@@ -5,10 +5,15 @@ use App\Http\Requests\CreateIgnRequest;
 use Illuminate\Support\Facades\Auth;
 use App\Users\User;
 
-/**
- * @Middleware("auth")
- */
 class IgnController extends Controller {
+
+    /**
+     * Auth user first
+     */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
 
     /**
      * Show the form for creating a new resource.
