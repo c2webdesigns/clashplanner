@@ -1,7 +1,7 @@
-<?php namespace app\Http\Controllers;
+<?php namespace App\Http\Controllers;
 
-use app\Helpers;
-use app\Social\FacebookFeed as FacebookFeed;
+use App\Helpers;
+use App\Social\FacebookFeed as FacebookFeed;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Auth;
 

@@ -1,4 +1,4 @@
-<?php namespace app\Social;
+<?php namespace App\Social;
 
 use Facebook\FacebookRequest;
 use Facebook\FacebookSession;

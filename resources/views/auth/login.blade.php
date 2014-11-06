@@ -21,7 +21,7 @@
                       <div class="row">
                         <div class="col-md-4">
                           <div class="form-group">
-                              <a href="{{ route('socialLogin') }}" class="btn btn-primary btn-lg">Sign in with Facebook</a>
+                              <a href="{{ route('social_login_path') }}" class="btn btn-primary btn-lg">Sign in with Facebook</a>
                           </div>
                         </div>
                       </div>

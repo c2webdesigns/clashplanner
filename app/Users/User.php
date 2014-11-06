@@ -1,4 +1,4 @@
-<?php namespace App;
+<?php namespace App\Users;
 
 use Illuminate\Auth\UserTrait;
 use Illuminate\Database\Eloquent\Model;
@@ -23,5 +23,22 @@ class User extends Model implements UserContract, CanResetPasswordContract {
 	 * @var array
 	 */
 	protected $hidden = ['password', 'remember_token'];
+
+	/**
+	 * @var array
+	 */
+	protected $fillable = [
+		'facebook_id',
+		'email',
+		'firstname',
+		'lastname',
+		'avatar',
+		'roles',
+		'gender',
+		'facebook_link',
+		'locale',
+		'timezone',
+		'access_token'
+	];
 
 }

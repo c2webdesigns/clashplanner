@@ -1,10 +1,13 @@
 <?php namespace App\Http\Controllers;
 
-use App\Http\Requests\LoginRequest;
-use Illuminate\Contracts\Auth\Guard;
+use App\AuthenticateUser as AuthenticateUser;
 use App\Http\Requests\RegisterRequest;
+use App\Http\Requests\LoginRequest;
+use App\Interfaces\AuthenticateUserListener;
+use Illuminate\Http\Request;
+use Illuminate\Contracts\Auth\Guard;
 
-class AuthController extends Controller {
+class AuthController extends Controller implements AuthenticateUserListener {
 
 	/**
 	 * The Guard implementation.
@@ -24,16 +27,6 @@ class AuthController extends Controller {
 		$this->auth = $auth;
 
 		$this->middleware('guest', ['except' => 'getLogout']);
-	}
-
-	/**
-	 * Show the application registration form.
-	 *
-	 * @return Response
-	 */
-	public function getRegister()
-	{
-		return view('auth.register');
 	}
 
 	/**
@@ -62,21 +55,23 @@ class AuthController extends Controller {
 	}
 
 	/**
-	 * Handle a login request to the application.
-	 *
-	 * @param  LoginRequest  $request
-	 * @return Response
-	 */
-	public function postLogin(LoginRequest $request)
+	 * @param AuthenticateUser $authenticateUser
+	 * @param Request $request
+	 * @return mixed
+     */
+	public function submitLogin(AuthenticateUser $authenticateUser, Request $request)
 	{
-		if ($this->auth->attempt($request->only('email', 'password')))
-		{
-			return redirect('/');
-		}
+		// Authenticate user
+		return $authenticateUser->execute($request->has('code'), $this);
+	}
 
-		return redirect('/auth/login')->withErrors([
-			'email' => 'These credentials do not match our records.',
-		]);
+	/**
+	 * @param $user
+	 * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
+     */
+	public function userHasLoggedIn($user)
+	{
+		return redirect('/wars');
 	}
 
 	/**
