@@ -31,7 +31,7 @@ return [
 	'facebook' => [
 		'client_id' => getenv('FACEBOOK_CLIENT_ID'),
 		'client_secret' => getenv('FACEBOOK_CLIENT_SECRET'),
-		'redirect' => 'http://clashplanner.app:8000/auth/socialLogin'
+		'redirect' => getenv('FACEBOOK_REDIRECT_URL')
 	],
 
 ];
