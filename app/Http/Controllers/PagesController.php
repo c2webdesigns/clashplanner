@@ -12,9 +12,11 @@ use Illuminate\Support\Facades\Auth;
 class PagesController extends Controller {
 
     /**
-     * @Get("/", as="home_path")
+     * Home page
+     *
+     * @return \Illuminate\View\View
      */
-    public function index()
+    public function home()
     {
 
         if (Auth::check()) {
@@ -26,17 +28,17 @@ class PagesController extends Controller {
     }
 
     /**
-     * @Get("guides")
+     * Guides
+     *
+     * @return \Illuminate\View\View
      */
-
     public function guides()
     {
         return view('pages.guides');
     }
 
     /**
-     * @Get("feed", as="feed_path")
-     * @Middleware("auth")
+     * Facebook feed
      *
      * @param FacebookFeed $facebookFeed
      * @return \Illuminate\View\View
