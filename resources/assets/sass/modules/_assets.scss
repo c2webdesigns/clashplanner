@@ -1,0 +1,16 @@
+.user-avatar {
+  border: solid 3px $accent-bg;
+}
+
+.created-time {
+  color: $alert-info-text;
+  font-size: 0.7em;
+  font-weight: bold;
+}
+
+.alert {
+  position: absolute;
+  top: 170px;
+  right: 5em;
+  z-index: 1100;
+}

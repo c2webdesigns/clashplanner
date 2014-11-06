@@ -1,0 +1,17 @@
+/**
+    Home
+*/
+
+.home-banner {
+  background: $accent-bg;
+  min-height: 427px;
+  padding: $padding;
+
+  .jumbotron {
+    background: inherit;
+  }
+}
+
+#home-jumbo-image {
+  padding: $padding 0;
+}

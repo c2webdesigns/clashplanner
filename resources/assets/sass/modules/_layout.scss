@@ -1,0 +1,37 @@
+/**
+  General layout variables
+*/
+
+$padding: 2em;
+
+/**
+  Body
+*/
+
+body {
+  box-sizing: border-box;
+}
+
+.accent {
+  background: $btn-success-bg;
+  color: #fff;
+  padding: $padding;
+}
+
+.splash {
+  margin-top: 8em;
+}
+
+.container-first {
+  margin-top: 140px;
+}
+
+@media (max-width: $screen-sm) {
+  .container-first {
+    margin-top: 165px;
+  }
+
+  .splash {
+    margin-top: 5em;
+  }
+}
