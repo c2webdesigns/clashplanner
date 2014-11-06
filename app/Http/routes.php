@@ -11,7 +11,7 @@
 |
 */
 
-$router->get('/', 'HomeController@index');
+$router->get('/', 'PagesController@index');
 
 /*
 |--------------------------------------------------------------------------
