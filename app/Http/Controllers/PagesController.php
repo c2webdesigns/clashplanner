@@ -12,7 +12,7 @@ class PagesController extends Controller {
 
     public function __construct()
     {
-        $this->middleware('auth', ['except' => 'home']);
+        $this->middleware('auth', ['except' => ['home', 'privacy']]);
     }
 
     /**
@@ -54,6 +54,11 @@ class PagesController extends Controller {
         $feed = $facebookFeed->feed;
 
         return view('pages.feed', compact('feed'));
+    }
+
+    public function privacy()
+    {
+        return view('pages.privacy');
     }
 
 }

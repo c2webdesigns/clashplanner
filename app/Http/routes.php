@@ -19,6 +19,11 @@ get('feed', [
     'uses' => 'PagesController@feed'
 ]);
 
+get('privacy-policy', [
+    'as' => 'privacy_policy_path',
+    'uses' => 'PagesController@privacy'
+]);
+
 /**
  * Auth
  */

@@ -6,6 +6,7 @@
         <p>
             This site was made with <span id="heart"><3</span> by Corey aka IamCoCoNut. &copy; {{ date('Y')  }}
         </p>
+        <p><a href="{{ route('privacy_policy_path') }}">Privacy Policy </a></p>
             </div>
             <div class="col-md-4">
                 <a href="https://www.facebook.com/groups/RidgeviewCrew/"><img class="pull-right footer-facebook" src="/images/facebook.png" alt="facebook fan page" /></a>
