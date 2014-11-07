@@ -6,7 +6,7 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col-md-6 col-md-push-3">
-                    <img src="/images/builder.png" alt="Builder guy"/>
+                    <img src="/images/builder.png" class="hidden-xs" alt="Builder guy"/>
                 </div>
             </div>
         </div>
