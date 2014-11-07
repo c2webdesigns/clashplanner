@@ -35,11 +35,11 @@ class UserRepository {
 
             // User does exist
         {
+            $user->firstname = $userData->user['first_name'];
+            $user->lastname = $userData->user['last_name'];
             $user->avatar = $userData->avatar;
-            $user->firstname = $userData->firstname;
-            $user->lastname = $userData->lastname;
-            $user->locale = $userData->locale;
-            $user->timezone = $userData->timezone;
+            $user->locale = $userData->user['locale'];
+            $user->timezone = $userData->user['timezone'];
             $user->access_token = $userData->token;
             $user->save();
         }
