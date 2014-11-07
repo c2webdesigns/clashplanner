@@ -1,6 +1,5 @@
 <?php namespace App\Http\Controllers;
 
-use Illuminate\Routing\Controller;
 use App\Http\Requests\CreateIgnRequest;
 use Illuminate\Support\Facades\Auth;
 use App\Users\User;

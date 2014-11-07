@@ -1,9 +1,9 @@
-<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+<div class="navbar-inverse" role="navigation">
 
-  <div class="container">
+  <div class="container container-nav">
     <div class="row">
       <div class="col-sm-6 navbar-header">
-        <a class="navbar-brand" href="/"><img src="/images/logo-small.png" class="img-responsive" alt="logo brand"/></a>
+        <a class="navbar-brand" href="/"><img src="/images/logo-small.png" class="logo-nav" alt="logo brand"/></a>
       </div>
 
       <div class="col-sm-6">
@@ -14,7 +14,7 @@
         
           <img src="{{ Auth::user()->avatar }}" class="user-avatar img-circle hidden-xs" alt="user avatar"/>
           <ul class="nav navbar-nav navbar-right">
-            <li class="dropdown">
+            <li class="dropdown settings-nav">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ \App\Helpers::displayName() }} <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
                 <li><a href="#">Profile</a></li>

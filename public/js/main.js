@@ -25,7 +25,7 @@
         match : function() {
             $('#main-nav-links').addClass('nav-stacked').removeClass('pull-right');
         },
-        unmatch : function() {
+         unmatch : function() {
             $('#main-nav-links').removeClass('nav-stacked').addClass('pull-right');
         }
 

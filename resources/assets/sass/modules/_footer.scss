@@ -34,3 +34,18 @@ footer {
 @keyframes myfirst {
   100%  { transform: rotate(-90deg); transform:rotate(-90deg); color: red; font-weight: bold; }
 }
+
+@media (max-width: $screen-sm) {
+  footer {
+
+    position: relative;
+
+    p {
+      font-size: .8em;
+    }
+  }
+
+  .footer-facebook {
+    height: 20px;
+  }
+}

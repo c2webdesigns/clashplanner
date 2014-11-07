@@ -2,7 +2,6 @@
 
 use App\Helpers;
 use App\Social\FacebookFeed as FacebookFeed;
-use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Auth;
 
 /**

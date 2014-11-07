@@ -1,6 +1,5 @@
 <?php namespace App\Http\Controllers;
 
-use Illuminate\Routing\Controller;
 use App\Users\User;
 
 class WarsController extends Controller {

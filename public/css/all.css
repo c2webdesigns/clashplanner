@@ -4561,12 +4561,7 @@ body {
 .splash {
   margin-top: 8em; }
 
-.container-first {
-  margin-top: 140px; }
-
 @media (max-width: 768px) {
-  .container-first {
-    margin-top: 165px; }
   .splash {
     margin-top: 5em; } }
 
@@ -4596,12 +4591,16 @@ body {
   margin-top: -20px; }
 
 @media (max-width: 768px) {
-  .signin-toggle {
-    margin-top: -20px; }
+  .container-nav {
+    height: 55px; }
+  .navbar-header {
+    height: 40px; }
+  .settings-nav {
+    margin-top: -30px; }
+  .logo-nav {
+    width: 70%; }
   .main-navigation {
-    padding: 0; }
-  #btn-signin {
-    margin-top: 20px; } }
+    padding: 0; } }
 
 /**
     Footer
@@ -4654,6 +4653,14 @@ footer {
             transform: rotate(-90deg);
     color: red;
     font-weight: bold; } }
+
+@media (max-width: 768px) {
+  footer {
+    position: relative; }
+    footer p {
+      font-size: 0.8em; }
+  .footer-facebook {
+    height: 20px; } }
 
 /**
     Home

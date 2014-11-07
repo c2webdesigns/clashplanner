@@ -35,16 +35,32 @@
 }
 
 @media (max-width: $screen-sm) {
+
+  .container-nav {
+    height: 55px;
+  }
+
+  .navbar-header {
+    height: 40px;
+  }
+
+  .settings-nav {
+    margin-top: -30px;
+  }
+
+  .logo-nav {
+    width: 70%;
+  }
+
+  .navbar-brand {
+  }
   .signin-toggle {
-    margin-top: -20px;
+    //margin-top: -40px;
   }
 
   .main-navigation {
     padding: 0;
   }
 
-  #btn-signin {
-    margin-top: 20px;
-  }
 
 }
