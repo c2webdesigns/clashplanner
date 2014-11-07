@@ -4574,11 +4574,13 @@ body {
 
 .main-navigation {
   background: #F7F5F6;
+  border-bottom: dashed thin #E0A045;
   padding: 0.66667em;
   z-index: 9; }
 
 #main-nav-links {
-  border: none; }
+  border: none;
+  margin-top: 2em; }
 
 .logout-banner {
   background: black;
@@ -4586,13 +4588,25 @@ body {
   .logout-banner img {
     margin-top: -30px; }
 
-.signin-toggle .user-avatar {
-  height: 60px;
-  margin-top: -20px; }
+.signin-toggle {
+  position: absolute;
+  top: 0px;
+  right: 0px; }
+  .signin-toggle .user-avatar {
+    height: 60px;
+    margin-top: -20px; }
 
 #btn-signin {
   position: relative;
   z-index: 100; }
+
+@media (max-width: 992px) {
+  .signin-toggle {
+    position: absolute;
+    right: -80px;
+    margin-top: 140px; }
+  #main-nav-links {
+    margin-top: 100px; } }
 
 @media (max-width: 768px) {
   .container-nav {
@@ -4601,12 +4615,30 @@ body {
     height: 40px; }
   .settings-nav {
     margin-top: -30px; }
-  #btn-signin {
-    margin-top: -22px; }
   .logo-nav {
-    width: 70%; }
+    width: 100%; }
+  .navbar-brand {
+    margin-top: 50px; }
+  .signin-toggle {
+    position: relative;
+    right: 0;
+    margin-top: 70px;
+    background: none; }
   .main-navigation {
-    padding: 0; } }
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 10;
+    padding: 0;
+    margin: 0;
+    border: none;
+    width: 100%;
+    background: inherit; }
+    .main-navigation .navbar-toggle {
+      background: grey;
+      margin-right: -10px; }
+    .main-navigation #main-nav-links {
+      margin-top: 20px; } }
 
 /**
     Footer
