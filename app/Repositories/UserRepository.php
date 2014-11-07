@@ -31,7 +31,15 @@ class UserRepository {
         if ( ! $user) {
             $user = User::create($data);
         }
-        else {
+        else
+
+            // User does exist
+        {
+            $user->avatar = $userData->avatar;
+            $user->firstname = $userData->firstname;
+            $user->lastname = $userData->lastname;
+            $user->locale = $userData->locale;
+            $user->timezone = $userData->timezone;
             $user->access_token = $userData->token;
             $user->save();
         }
