@@ -38,14 +38,6 @@
 
         @endforeach
 
-        @foreach ($feed as $post)
-
-            <pre>
-                 {!! print_r($post) !!}
-            </pre>
-
-        @endforeach
-
     </div>
 
 
