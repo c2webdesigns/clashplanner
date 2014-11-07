@@ -4549,6 +4549,9 @@ button.close {
   right: 5em;
   z-index: 1100; }
 
+.textwrap {
+  word-wrap: break-word; }
+
 /**
   General layout variables
 */

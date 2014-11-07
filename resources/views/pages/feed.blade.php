@@ -24,7 +24,7 @@
                         <div class="col-sm-10">
                             <p class="lead"><a href="https://www.facebook.com/{{ $post->from->id }}" target="_blank"    >{{ \App\Helpers::displayFacebookName($post->from->id, $post->from->name) }}</a> <span class="created-time"> at {{ date("M d Y h:ia", strtotime($post->created_time)) }}</span></p>
                         </div>
-                        <div class="col-sm-12">
+                        <div class="col-sm-12 textwrap">
                         {!! nl2br($post->message) !!}
                         @if (isset($post->picture))
                             <p><a href="{{ $post->link }}" target="_blank"><img src="{{ $post->picture }}" alt="Facebook image post" class="img-thumbnail"/></a></p>
