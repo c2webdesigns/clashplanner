@@ -12,10 +12,18 @@ body {
   box-sizing: border-box;
 }
 
+h1 {
+  font-family: 'ClashFont', Arial, sans-serif;
+  font-size: 3em;
+  padding: $padding / 4;
+  border-bottom: solid;
+}
+
 .accent {
   background: $btn-success-bg;
   color: #fff;
   padding: $padding;
+  margin-bottom: 2em;
 }
 
 .container-first {

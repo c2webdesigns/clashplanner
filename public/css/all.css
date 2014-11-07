@@ -4530,6 +4530,11 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+@font-face {
+  font-family: 'ClashFont';
+  src: url('/../fonts/supercell-magic-webfont-webfont.eot');
+  src: url('/../fonts/supercell-magic-webfont-webfont.eot?#iefix') format('embedded-opentype'), url('/../fonts/supercell-magic-webfont-webfont.woff') format('woff'), url('/../fonts/supercell-magic-webfont-webfont.ttf') format('truetype'), url('/../fonts/supercell-magic-webfont-webfont.svg#webfont') format('svg'); }
+
 .user-avatar {
   border: solid 3px #F7F5F6; }
 
@@ -4553,10 +4558,17 @@ button.close {
 body {
   box-sizing: border-box; }
 
+h1 {
+  font-family: 'ClashFont', Arial, sans-serif;
+  font-size: 3em;
+  padding: 0.5em;
+  border-bottom: solid; }
+
 .accent {
   background: #5cb85c;
   color: #fff;
-  padding: 2em; }
+  padding: 2em;
+  margin-bottom: 2em; }
 
 .splash {
   margin-top: 8em; }
@@ -4610,7 +4622,8 @@ body {
 
 @media (max-width: 768px) {
   .container-nav {
-    height: 55px; }
+    height: 55px;
+    margin-bottom: 100px; }
   .navbar-header {
     height: 40px; }
   .settings-nav {
