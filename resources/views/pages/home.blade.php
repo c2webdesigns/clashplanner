@@ -4,7 +4,7 @@
 
 <div class="home-banner container-first">
   <div class="container">
-    <div class="row">
+    <div class="row text-center">
       <div class="col-sm-5">
         <img id="home-jumbo-image" src="/images/hogrider.jpg" alt="hog rider"/>
       </div>

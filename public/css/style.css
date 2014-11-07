@@ -4683,3 +4683,7 @@ footer {
 #home-jumbo-image {
   padding: 2em 0; }
 
+@media (max-width: 768px) {
+  #home-jumbo-image {
+    width: 70%; } }
+
