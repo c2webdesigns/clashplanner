@@ -34,6 +34,11 @@
   }
 }
 
+#btn-signin {
+  position: relative;
+  z-index: 100;
+}
+
 @media (max-width: $screen-sm) {
 
   .container-nav {
@@ -46,6 +51,10 @@
 
   .settings-nav {
     margin-top: -30px;
+  }
+
+  #btn-signin {
+    margin-top: -22px;
   }
 
   .logo-nav {

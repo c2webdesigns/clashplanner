@@ -59,11 +59,6 @@
 
   @else
 
-  <nav class="logout-banner">
-    <div class="container text-center">
-      <img src="/images/banner.png" class="hidden-xs" alt="logout banner"/>
-    </div>
-  </nav>
 
   @endif
 

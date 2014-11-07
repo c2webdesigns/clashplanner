@@ -1,4 +1,4 @@
-@extends('layouts.master')
+@extends('layouts.splash')
 
 @section('content')
     <div class="container container-first">
@@ -7,7 +7,7 @@
 
                 <div class="row">
                     <div class="col-md-4">
-                        <img src="/images/facebook-128.png" alt="Facebook login"/>
+                        <img src="/images/facebook-128.png" class="hidden-xs" alt="Facebook login"/>
                     </div>
                     <div class="col-md-8">
                         <h1>Sign In with Facebook</h1>

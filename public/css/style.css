@@ -4590,6 +4590,10 @@ body {
   height: 60px;
   margin-top: -20px; }
 
+#btn-signin {
+  position: relative;
+  z-index: 100; }
+
 @media (max-width: 768px) {
   .container-nav {
     height: 55px; }
@@ -4597,6 +4601,8 @@ body {
     height: 40px; }
   .settings-nav {
     margin-top: -30px; }
+  #btn-signin {
+    margin-top: -22px; }
   .logo-nav {
     width: 70%; }
   .main-navigation {
@@ -4659,6 +4665,8 @@ footer {
     position: relative; }
     footer p {
       font-size: 0.8em; }
+  .footer-space {
+    height: 0px; }
   .footer-facebook {
     height: 20px; } }
 
