@@ -29,6 +29,7 @@
   "dependencies": {
     "bootstrap-sass-official": "3.2.0+2",
     "animate-css": "~3.2.0",
-    "enquire": "~2.1.2"
+    "enquire": "~2.1.2",
+    "chartjs": "~0.2.0"
   }
 }
