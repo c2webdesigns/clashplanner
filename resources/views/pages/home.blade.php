@@ -31,6 +31,7 @@
       <div class="col-md-3 col-md-offset-1">
         <h3>Resources</h3>
         <p>Learn about external resources to improve your clashing.</p>
+        <p></p>
       </div>
 
       <div class="col-md-3 col-md-offset-1">

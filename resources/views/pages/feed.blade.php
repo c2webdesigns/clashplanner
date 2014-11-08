@@ -13,8 +13,6 @@
 
         @foreach ($feed as $post)
 
-
-
             <div class="col-md-2">
                 <img src="https://graph.facebook.com/{{ $post->from->id }}/picture?type=normal" class="img-circle user-avatar avatar-feed" alt="facebook user"/>
             </div>

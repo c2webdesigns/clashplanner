@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Auth;
 use App\Users\User;
+use Illuminate\Support\Facades\Route;
 
 class Helpers {
 

@@ -1,8 +1,9 @@
 <?php namespace App\Http\Controllers;
 
-use App\Helpers;
+use App\Helpers as Helpers;
 use App\Social\FacebookFeed as FacebookFeed;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Request;
 
 /**
  * Class PagesController
@@ -22,7 +23,6 @@ class PagesController extends Controller {
      */
     public function home()
     {
-
         if (Auth::check()) {
             $login_status = 'Welcome back, ' . Helpers::displayName();
         } else {

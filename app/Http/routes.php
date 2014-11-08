@@ -25,6 +25,11 @@ get('privacy-policy', [
 ]);
 
 /**
+ * Clanmates
+ */
+Route::Resource('clanmates', 'ClanmatesController');
+
+/**
  * Auth
  */
 

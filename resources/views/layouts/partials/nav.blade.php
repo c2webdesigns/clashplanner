@@ -45,10 +45,11 @@
           <span class="icon-bar"></span>
         </button>
         <ul class="nav nav-pills navbar-collapse collapse pull-right" id="main-nav-links">
-          <li class="active"><a href="{{ route('home_path') }}">Home</a></li>
-          <li><a href="/wars">Wars</a></li>
-          <li><a href="/guides">Guides</a></li>
-          <li><a href="/feed">Facebook Feed</a></li>
+          <li {!! (Request::is('/')) ? 'class="active"' : '' !!}><a href="{{ route('home_path') }}">Home</a></li>
+          <li {!! (Request::is('clanmates')) ? 'class="active"' : '' !!}><a href="/clanmates">Clanmates</a></li>
+          <li {!! (Request::is('wars')) ? 'class="active"' : '' !!}><a href="/wars">Wars</a></li>
+          <li {!! (Request::is('guides')) ? 'class="active"' : '' !!}><a href="/guides">Guides</a></li>
+          <li {!! (Request::is('feed')) ? 'class="active"' : '' !!}><a href="/feed">Facebook Feed</a></li>
         </ul>
     </div>
   </nav>
