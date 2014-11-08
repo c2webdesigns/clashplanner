@@ -20,7 +20,6 @@ class UserRepository {
             'lastname' => $userData->user['last_name'],
             'avatar' => $userData->avatar,
             'gender' => $userData->user['gender'],
-            'roles' => 'member',
             'facebook_link' => $userData->user['link'],
             'locale' => $userData->user['locale'],
             'timezone' => $userData->user['timezone'],

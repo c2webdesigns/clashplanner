@@ -1,6 +1,8 @@
 <?php namespace App\Http\Controllers;
 
+use App\Clanmates\ClanMates;
 use App\Http\Controllers\Controller;
+use App\Users\Leader;
 use App\Users\User;
 use Illuminate\Support\Facades\Auth;
 
@@ -9,14 +11,16 @@ class ClanmatesController extends Controller {
 	/**
 	 * Display a listing of the resource.
 	 *
+	 * @param Leader $leader
 	 * @return Response
 	 */
-	public function index()
+	public function index(Leader $leader, ClanMates $clanMates)
 	{
+		$leader = $leader->getLeader(Auth::user()->role);
 
-		$admin = Auth::user();
+		$clanmates = $clanMates->getAllClanmates();
 
-		return view('clanmates.home', compact('admin'));
+		return view('clanmates.index', compact('leader', 'clanmates'));
 	}
 
 	/**

@@ -5,6 +5,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Contracts\Auth\User as UserContract;
 use Illuminate\Auth\Passwords\CanResetPasswordTrait;
 use Illuminate\Contracts\Auth\CanResetPassword as CanResetPasswordContract;
+use Illuminate\Support\Facades\Auth;
 
 class User extends Model implements UserContract, CanResetPasswordContract {
 
@@ -40,14 +41,5 @@ class User extends Model implements UserContract, CanResetPasswordContract {
 		'timezone',
 		'access_token'
 	];
-
-	public function leader ($user)
-	{
-		if ($user->role == 'leader') {
-			return 'a leader';
-		} else {
-			return 'not a leader';
-		}
-	}
 
 }
