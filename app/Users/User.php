@@ -41,4 +41,13 @@ class User extends Model implements UserContract, CanResetPasswordContract {
 		'access_token'
 	];
 
+	public function leader ($user)
+	{
+		if ($user->role == 'leader') {
+			return 'a leader';
+		} else {
+			return 'not a leader';
+		}
+	}
+
 }

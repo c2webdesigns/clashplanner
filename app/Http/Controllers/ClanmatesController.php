@@ -1,6 +1,8 @@
 <?php namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use App\Users\User;
+use Illuminate\Support\Facades\Auth;
 
 class ClanmatesController extends Controller {
 
@@ -11,8 +13,10 @@ class ClanmatesController extends Controller {
 	 */
 	public function index()
 	{
-		//
-		return view('clanmates.home');
+
+		$admin = Auth::user();
+
+		return view('clanmates.home', compact('admin'));
 	}
 
 	/**
