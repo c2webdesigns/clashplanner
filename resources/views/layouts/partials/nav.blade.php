@@ -9,12 +9,12 @@
 
           @if (Auth::check())
 
-            <img src="{{ Auth::user()->avatar }}" class="user-avatar img-circle hidden-xs" alt="user avatar"/>
+            <a href="/clanmates/{{ Auth::user()->ign }}"><img src="{{ Auth::user()->avatar }}" class="user-avatar hidden-xs" alt="user avatar"/></a>
             <ul class="nav navbar-nav navbar-right">
               <li class="dropdown settings-nav">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ \App\Helpers::displayName() }} <span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
-                  <li><a href="#">Profile</a></li>
+                  <li><a href="/clanmates/{{ Auth::user()->ign }}">Profile</a></li>
                   <li><a href="#">Stats</a></li>
                   <li><a href="#">Contact Leaders</a></li>
                   <li class="divider"></li>

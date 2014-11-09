@@ -3,10 +3,6 @@
   z-index: 10;
 }
 
-.signin-toggle {
-  margin-top: 30px;
-}
-
 .main-navigation {
   background: $accent-bg;
   border-bottom: dashed thin $gold;
@@ -30,13 +26,16 @@
 
 .signin-toggle {
 
+  margin-top: 20px;
   position: absolute;
   top: 0px;
   right: 0px;
 
   .user-avatar {
-    height: 60px;
-    margin-top: -20px;
+    margin-top: -15px;
+    height: 70px;
+    width: 70px;
+    border-width: 3px;
   }
 }
 

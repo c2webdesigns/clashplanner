@@ -49,9 +49,10 @@ class ClanmatesController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function show($id)
+	public function show($ign)
 	{
-		//
+		$clanmate = User::where('ign', '=', $ign)->take(1)->get();
+		return view('clanmates.profile', compact('clanmate'));
 	}
 
 	/**
